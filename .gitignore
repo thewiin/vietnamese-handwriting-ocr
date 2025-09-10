@@ -1,0 +1,27 @@
+# Loại bỏ thư mục PaddleOCR
+PaddleOCR/
+
+# Loại bỏ pretrained models
+pretrain_models/
+output/
+
+# Loại bỏ dữ liệu lớn
+data/raw/
+data/train_data/
+data/val_data/
+data/test_data/
+
+
+# Loại bỏ file tạm và môi trường Python
+__pycache__/
+*.pyc
+.env
+venv/
+*.log
+.idea
+
+# Loại bỏ file nặng khác
+*.pdparams
+*.pdopt
+*.tar
+*.gz
