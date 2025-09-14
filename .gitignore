@@ -1,27 +1,33 @@
-# Loại bỏ thư mục PaddleOCR
-PaddleOCR/
+# 1. Bỏ qua các file cài đặt của IDE (PyCharm)
+.idea/
 
-# Loại bỏ pretrained models
-pretrain_models/
-output/
-
-# Loại bỏ dữ liệu lớn
-data/raw/
-data/train_data/
-data/val_data/
-data/test_data/
-
-
-# Loại bỏ file tạm và môi trường Python
+# 2. Bỏ qua các file cache của Python
 __pycache__/
 *.pyc
-.env
-venv/
-*.log
-.idea
 
-# Loại bỏ file nặng khác
-*.pdparams
-*.pdopt
+# 3. Bỏ qua thư mục chứa môi trường ảo (nếu có)
+.venv/
+venv/
+ENV/
+env/
+
+# 4. Bỏ qua TOÀN BỘ dữ liệu (quan trọng nhất)
+# Dữ liệu nên được lưu trữ trên Google Drive hoặc các dịch vụ khác, không phải trên Git.
+data/
+
+# 5. Bỏ qua các model đã huấn luyện (quan trọng nhất)
+# Các file model rất lớn và không nên đưa lên Git.
+output/
+
+# 6. Bỏ qua toàn bộ thư mục PaddleOCR đã clone
+# Thư viện này nên được cài đặt qua requirements.txt, không nên commit cả repo.
+PaddleOCR/
+
+# 7. Bỏ qua các thư mục chứa pre-trained model đã tải về
+# Tên thư mục thường có đuôi _train
+*_train/
 *.tar
-*.gz
+
+# 8. Bỏ qua các file log và file tạm khác
+*.log
+temp_images/
